@@ -1,0 +1,151 @@
+/*this is the print*/
+
+.item {
+  padding-top: 50px;
+
+}
+
+a:after {
+/*  content: " (" attr(href) ") ";*/
+}
+
+
+/*dit is alles wat ik niet wil zien*/
+
+#menu {
+  display: none;
+}
+
+#abstract {
+  display: none;
+}
+
+#about {
+  display: none;
+}
+
+#printbutton {
+  display: none;
+}
+
+/* dit is alles wat ik wel wil zien!*/
+
+#print {
+  display: block;
+}
+
+
+/*-- TYPE --*/
+
+h1  {
+  /*variabel*/
+  left: -10%;
+  font-size: 120pt;
+  line-height: 120pt;
+  -webkit-animation:0; /*infinite*/
+  -moz-animation:0;
+
+  /*standaard*/
+  position: relative;
+  margin: 0 auto;
+  font-weight: 700;
+  padding: 0;
+}
+
+blockquote {
+  /*variabel*/
+  left: 0;
+  width: 60%;
+  font-size: 24pt;
+  -webkit-animation:0; /*infinite*/
+  -moz-animation:0;
+
+  /*standaard*/
+  position: relative;
+  margin: 0 auto;
+  font-weight: 400;
+  padding: 15px;
+
+}
+
+/* IMAGES */
+
+.image-left {
+  /*position: absolute;*/
+  display:none;
+  left: 30px;
+  width: 150px;
+  background-color: #000;
+  margin:10px;
+  padding: 15px;
+  opacity: 1;
+  z-index: 0;
+  -moz-filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+.image-right   {
+  /*position: absolute;*/
+  display: none;
+  right: 0%;
+  left: 30px;
+  width: 150px;
+  background-color: #000;
+  margin:10px;
+  padding: 15px;
+  opacity: 1;
+  z-index: 0;
+  -moz-filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+.video   {
+  display: none;
+  position: absolute;
+  right: 10%;
+  width: 560px;
+  background-color: #000;
+  margin:15px;
+  margin-top: -200px;
+  padding: 15px;
+}
+
+img {
+  padding-bottom: 5px;
+  width: 150px;
+}
+
+.image-left, .image-right, .video, .footnote{
+  display:none !important;
+}
+
+#p-literatuurlijst p>a {
+  display: none;
+}
+
+
+/*PAGENUMERS*/
+
+/*#pageFooter {
+  display: block;
+}
+
+#pageFooter:after {
+    counter-increment: page;
+    content:"Page " counter(page);
+    left: 0; 
+    top: 100%;
+    white-space: nowrap; 
+    z-index: 20px;
+    -moz-border-radius: 5px; 
+    -moz-box-shadow: 0px 0px 4px #222;  
+    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);  
+    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);  
+  }
+
+
+@page {
+  @bottom-left {
+    content: counter(page) "/" counter(pages);
+  }
+}

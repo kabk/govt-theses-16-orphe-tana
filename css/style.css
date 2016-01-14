@@ -1,204 +1,394 @@
-a {color:pink;}
+/*-------------------*/
+/* Standaard shizzle */
+/*-------------------*/
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+html {
+  height: 100%; 
+}
 
 body {
-    font-size: 21px;
-    line-height: 24px;
-    padding: 8px 16px 0px 8px;
-    font-family: NeueHaasUnicaPro-Light, sans-serif;
-    font-weight: 100;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
-* {
-    box-sizing: border-box;
+#thesis {
 }
 
-header {
-    padding: 0 0 20px 0;
-    font-size: 30px;
-    text-decoration: line-through;
+.item {
+  padding-bottom: 400px;
+  width: 70%;
+  margin: 0 auto;
 }
 
-article { 
-    max-width: 602px;
+#print {
+  display: none;
 }
 
-#example article {
-    max-width: 734px;
-    margin-left: 300px;
-}
-
-#example nav {
-    float: left;
-    width: 280px;
-    height: 100%;
-}
-
-#example article {
-    clear: all;
-}
-
-@media screen and (max-width: 768px) {
-   #example nav {
-       float: none;
-   }
-   #example article {
-       margin-left: inherit;
-   }
-}
+/*#pageFooter {
+  display: none;
+}*/
 
 
-li {
-    list-style: none;
-    margin-bottom: 8px;
-}
 
-dt, dd {
-    margin-bottom: 2px;
-}
+/*-----------------*/
+/* Alles met tekst */
+/*-----------------*/
 
-dt {
-    margin-top: 6px;
-}
+/*  
+    h1  titel scriptie
+    h2  titel hoofdstuk
+    h3  subkop hoofdstuk
+*/
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 100;
-    margin: 0;
-    margin-top: 21px;
-    padding: 0;
-}
+h1  {
+  /*variabel*/
+  left: 0;
+  font-size: 140pt;
+  line-height: 100pt;
+  -webkit-animation:0; /*infinite*/
+  -moz-animation:0;
 
-h1 {
-}
-
-h2, h3 {
-    font-size: 36px;
-    line-height: 40px;
+  /*standaard*/
+  position: relative;
+  margin: 0 auto;
+  font-weight: 700;
+  padding: 15px;
 }
 
 h2 {
-    text-transform: uppercase;
+  /*variabel*/
+  left: 0;
+  width: 60%;
+  font-size: 50pt;
+  /*-webkit-animation: whisper 7s ease-in-out infinite; /*infinite*/
+  /*-moz-animation: whisper 7s ease-in-out infinite;*/
+
+  /*standaard*/
+  position: relative;
+  margin: 0 auto;
+  font-weight: 700;
+  padding: 15px;
 }
 
-h4, h5 {
-  font-size: 27px;
-  line-height: 30px;
+h3 {
+  /*variabel*/
+  left: 0;
+  width: 60%;
+  font-size: 24pt;
+  -webkit-animation:0; /*infinite*/
+  -moz-animation:0;
+
+  /*standaard*/
+  position: relative;
+  margin: 0 auto;
+  font-weight: 700;
+  padding: 15px;
 }
 
-h4 {
-    text-transform: uppercase;
-}
+blockquote {
+  /*variabel*/
+  left: 0;
+  width: 60%;
+  font-size: 40pt;
+  -webkit-animation:0; /*infinite*/
+  -moz-animation:0;
 
-h2 a {
-    text-decoration: none;
-}
+  /*standaard*/
+  position: relative;
+  margin: 0 auto;
+  font-weight: 400;
+  padding: 15px;
 
-h6 {
-  font-size: 21px;
-  line-height: 24px;
-}
-
-
-ul, ol {
-    margin-top: 20px;
-    padding-left: 20px;
-}
-
-a, a:hover, a:visited, a:active {
-    color: black;
-}
-
-a.group4, a.group4:hover, a.group4:visited, a.group4:active {
-    color: #0cf6ff;
-}
-
-a.group3title, a.group3title:hover, a.group3title:visited, a.group3title:active {
-    color: #0000FF;
-    font-size: 25px;
-}
-
-a.group3, a.group3:hover, a.group3:visited, a.group3:active {
-    color: #0000FF;
-}
-
-
-p, svg {
-    margin-top: 0;
-    margin-bottom: 24px;
 }
 
 p {
-  font-size: 21px;
-  line-height: 24px;
-  margin: 14px 0;
+  /*variabel*/
+  left: 0;
+  width: 60%;
+  font-size: 12pt;
+  line-height: 18pt;  
+  -webkit-animation:0; /*infinite*/
+  -moz-animation:0;
+
+  /*standaard*/
+  position: relative;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  padding-bottom: 30px;
 }
 
-p.spacer {
-    line-height: 0;
+li {
+  list-style: none;
+  margin-bottom: 8px;
 }
 
-pre {
-    white-space: pre-wrap;
+ul, ol {
+  margin-top: 20px;
+  padding-left: 0px;
+
 }
 
-figure {
-    margin: 0;
-    padding: 1em 40px;
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+  color: #00f;
 }
 
-figure figcaption {
-    padding-top: 1em;
+nav {
+  width: 200px;
+  margin-left: 0;
 }
 
-/* This makes the images scale to the full width of the page */
-img {
-    max-width: 600px;
-    max-height: 315px;
-    width: 100%;
-    height: auto;
-}
 
-header select {
-    float: right;
-}
 
-div.preview {
-  max-width: 602px;
-  margin-bottom: 30px;
-}
+/*-------------------*/
+/* alles met menutje */
+/*-------------------*/
 
-div.preview figure {
-  border: 1px solid #ccc;
-  border-bottom: none;
-  margin: 0;
+
+#menu {
+  margin: 20px;
+  font-size: 14px;
+  position: fixed;
+  width: 200px;
+  float: left;
+  /*background-color: #fff;*/
   padding: 0;
 }
 
-div.preview p:last-child {
-  margin-bottom: 54px;
+#menu>a {
+  cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
-    header select {
-        float: left;
-    }
-    header h1 {
-       font-size: 20px;
-   }
-   p {
-     font-size: 16px;
-     line-height: 24px;
-     margin: 14px 0;
-   }
+#menu-lijst {
+  display: none;
+  position: absolute;
+  width: 200px;
+  float: left;
+  padding: 0;
 }
 
-@media screen and (min-width: 480px) {
-    article, header {
-        margin-left: 40px;
-    }
+#menu:hover #menu-lijst{
+  display: block;
 }
 
-@media print {
-    header select {
-        display: none;
-    }
+
+/*-----------------*/
+/* alles met about */
+/*-----------------*/
+
+
+#about {
+  z-index: 90; 
+  margin: 20px;
+  font-size: 14px;
+  position: fixed;
+  float: left;
+  width: 200px;
+  top: 0;
+  right: 0;
+  text-align: right;
+
+  /*background-color: #fff;*/
+  padding: 0;
+}
+
+#about>a {
+  cursor: pointer;
+}
+
+#about-lijst {
+  text-align: right;
+  display: none;
+  position: absolute;
+  width: 200px;
+  padding: 0;
+}
+
+#about:hover #about-lijst{
+  display: block;
+}
+
+/*--------------------*/
+/* alles met abstract */
+/*--------------------*/
+
+
+#abstract {
+  z-index: 90; 
+  margin: 20px;
+  font-size: 14px;
+  position: fixed;
+  float: left;
+  width: 200px;
+  bottom: 0;
+
+  /*background-color: #fff;*/
+  padding: 0;
+}
+
+#abstract>a {
+  cursor: pointer;
+}
+
+#printbutton {
+  z-index: 90; 
+  margin: 20px;
+  font-size: 14px;
+  position: fixed;
+  float: left;
+  width: 200px;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+  padding: 0;
+}
+
+
+/*---------------------*/
+/* alles met footnotes */
+/*---------------------*/
+
+.toggle-footnote::before{
+  content: "[";
+}
+.toggle-footnote::after{
+  content: "]";
+}
+
+.footnote {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  width: 200px;
+  padding:10px;
+  right: 30px;
+  margin-top: -40px;
+}
+
+p>a {
+  position: relative;
+  font-size: 10px;
+  top: -7px;
+}
+
+blockquote>a {
+  position: relative;
+  font-size: 10px;
+  top: -15px;
+}
+
+
+/*--------------------*/
+/* afbeelding divjes! */
+/*--------------------*/
+
+.image-left {
+  position: absolute;
+  left: 10%;
+  width: 300px;
+  background-color: pink;
+  margin:15px;
+  padding: 15px;
+  opacity: 0.2;
+  z-index: 40;
+  -moz-filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.image-right   {
+  position: absolute;
+  right: 10%;
+  width: 300px;
+  background-color: #000;
+  margin:15px;
+  padding: 15px;
+  opacity: 0.2;
+  z-index: 40;
+  -moz-filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.video   {
+  position: absolute;
+  right: 10%;
+  width: 560px;
+  background-color: #000;
+  margin:15px;
+  margin-top: -200px;
+  padding: 15px;
+  opacity: 0.2;
+  z-index: 40;
+  -moz-filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.image-left:hover {
+  opacity: 1;
+  -webkit-filter: blur(0px);
+}
+
+.image-right:hover {
+  opacity: 1;
+  -webkit-filter: blur(0px);
+
+}
+
+.video:hover {
+  opacity: 1;
+  -webkit-filter: blur(0px);
+
+}
+
+
+img {
+  padding-bottom: 5px;
+  width: 300px;
+}
+sub {
+  font-size: 11px;
+  color: #fff;
+}
+
+
+/*----------------*/
+/* alle animaties */
+/*----------------*/
+
+
+@-webkit-keyframes whisper {
+  0%   {padding-left:60px;}
+  50%  {padding-left:20px;}
+  100% {padding-left:10px;}
+}
+
+@-moz-keyframes whisper {
+  0%   {padding-left:0px;}
+  50%  {padding-left:30px;}
+  100% {padding-left:0px;}
+}
+
+@-webkit-keyframes opacity {
+  0%   {opacity:0.3;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes opacity {
+  0%   {opacity:0;}
+  50%  {opacity:1;}
+  100% {opacity:0;}
 }
